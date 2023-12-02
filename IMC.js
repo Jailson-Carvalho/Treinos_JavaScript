@@ -1,0 +1,20 @@
+//IMC
+// main
+function calcularImc(peso, altura) {
+    return (peso / (altura ** 2)).toFixed(2)
+}
+
+const imc = calcularImc(69, 1.73) // para o programa ser executada tem que ser chamado aqui
+console.log(imc)
+
+if (imc < 18.5) {
+    console.log("Portanto você está abaixo do peso.");
+} else if (imc >= 18.5 && imc < 25) {
+    console.log("Portanto você está com o peso normal.");
+} else if (imc >= 25 && imc < 30) {
+    console.log("Portanto você está acima do peso!");
+} else if (imc >= 30 && imc < 40) {
+    console.log("Portanto você está obeso");
+} else if (imc >= 40) {
+    console.log("Portanto você está com obesidade grave!!");
+}
